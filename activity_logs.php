@@ -1,4 +1,7 @@
 <?php
+require_once 'core/dbConfig.php';
+require_once 'core/models.php';
+
 if (!isset($_SESSION['username'])) {
     header("Location: login.php");
     exit();
